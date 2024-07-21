@@ -4,7 +4,7 @@ FROM ${BUILD_FROM}
 RUN apk add --no-cache curl
 
 # Install Unpoller
-RUN curl -L https://github.com/unpoller/unpoller/releases/download/v2.11.2/unpoller_2.11.2_linux_${BUILD_ARCH}.tar.gz | tar xz -C /usr/local/bin
+RUN curl -L "https://github.com/unpoller/unpoller/releases/download/v2.11.2/unpoller_2.11.2_linux_${BUILD_ARCH}.tar.gz" | tar xz -C /usr/local/bin
 
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
