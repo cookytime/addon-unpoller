@@ -1,4 +1,4 @@
 # https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
 name: Unpoller AddOn  
 url: 'https://github.com/cookytime/addon-unpoller/'
-maintainer: Glen Cook glen@glencook.net
+maintainer: Glen Cook <glen@glencook.net>
