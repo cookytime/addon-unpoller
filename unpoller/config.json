@@ -3,7 +3,7 @@
   "version": "1.0",
   "slug": "unpoller_addon",
   "description": "An add-on to install and run Unpoller.",
-  "arch": ["aarch64", "amd64", "armv7", "armhf", "i386"],
+  "arch": ["aarch64", "amd64", "armv7", "armhf"],
   "startup": "services",
   "init": false,
   "ports": {
