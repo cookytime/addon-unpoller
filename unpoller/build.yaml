@@ -4,7 +4,7 @@ build_from:
   amd64: "ghcr.io/home-assistant/amd64-base-debain:bookworm"
   armhf: "ghcr.io/home-assistant/armhf-base-debain:bookworm"
   armv7: "ghcr.io/home-assistant/armv7-base-debain:bookworm"
-  i386: "ghcr.io/home-assistant/i386-base=base:bookworm"
+  i386: "ghcr.io/home-assistant/i386-base-base:bookworm"
 labels:
   org.opencontainers.image.title: "Unpolller for Home Assistnat"
   org.opencontainers.image.description: "Unpoller"
