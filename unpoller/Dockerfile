@@ -7,5 +7,6 @@ RUN apt update
 RUN apt install gpg curl -y
 RUN \
     curl -s https://golift.io/repo.sh | bash -s - unpoller
-
-
+    
+# Copy root filesystem
+COPY rootfs /

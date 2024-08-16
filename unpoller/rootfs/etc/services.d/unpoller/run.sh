@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/with-contenv bashio
 set -e
 
 CONFIG_PATH=/data/options.json
@@ -14,7 +14,7 @@ UNIFI_URL=$(jq --raw-output '..unifi_url' $CONFIG_PATH)
 UNIFI_SAVE_DPI=$(jq --raw-output '.unifi_save_dpi' $CONFIG_PATH)
 
 # Create Unpoller config file
-cat <<EOF > /etc/unpoller/up.conf
+cat <<EOF > /config/up.conf
 [unifi.defaults]
 delay = "5m"
 save_dpi = true
@@ -39,4 +39,4 @@ verify_ssl  = false
 EOF
 
 # Run Unpoller
-unpoller -c /etc/unpoller/up.conf
+unpoller -c /config/up.conf
