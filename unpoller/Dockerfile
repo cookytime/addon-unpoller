@@ -4,7 +4,6 @@ FROM $BUILD_FROM
 
 # Execute during the build of the image
 RUN apt update
-RUN apt upgrade
 RUN apt install gpg
 RUN \
     curl -s https://golift.io/repo.sh | bash -s - unpoller
