@@ -12,6 +12,8 @@ on:
     branches:
       - main
 
+runs-on: self-hosted
+
 jobs:
   init:
     runs-on: ubuntu-latest

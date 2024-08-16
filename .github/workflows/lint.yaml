@@ -10,6 +10,8 @@ on:
   schedule:
     - cron: "0 0 * * *"
 
+runs-on: self-hosted
+
 jobs:
   find:
     name: Find add-ons
