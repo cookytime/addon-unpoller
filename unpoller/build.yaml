@@ -5,7 +5,7 @@ build_from:
   armhf: "ghcr.io/home-assistant/armhf-base-debain:bookworm"
   armv7: "ghcr.io/home-assistant/armv7-base-debain:bookworm"
   i386: "ghcr.io/home-assistant/i386-base=base:bookworm"
-labels:labels:
+labels:
   org.opencontainers.image.title: "Unpolller for Home Assistnat"
   org.opencontainers.image.description: "Unpoller"
   org.opencontainers.image.source: "https://github.com/cookytime/addon-unpoller"
