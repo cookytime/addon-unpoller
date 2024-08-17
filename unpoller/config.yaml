@@ -13,9 +13,9 @@ arch:
 init: false
 map:
   - share:rw
-  - homeassistant_config:rw
+  - addon_config:rw
 options:
-
+  - !env_var 
 schema:
   message: "str?"
 image: "ghcr.io/cookytime/{arch}-addon-unpoller"
