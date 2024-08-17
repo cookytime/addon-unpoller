@@ -15,7 +15,21 @@ map:
   - share:rw
   - addon_config:rw
 options:
-  - !env_var 
+  influxdb_url: http://47c55538-influxdbv2:9200
+  influxdb_token: 
+  influxdb_org: GlenCookTech
+  influxdb_bucket: unifi 
+  unifi_user: ha
+  unifi_pass: naLc8mKV62oy49PVDtm6
+  unifi_url: https://192.168.1.1
+  unifi_save_dpi: True
 schema:
-  message: "str?"
+  influxdb_url: str
+  influxdb_token: str
+  influxdb_org: str
+  influxdb_bucket: str
+  unifi_user: str
+  unifi_pass: str
+  unifi_url: str
+  unifi_save_dpi: bool
 image: "ghcr.io/cookytime/{arch}-addon-unpoller"
