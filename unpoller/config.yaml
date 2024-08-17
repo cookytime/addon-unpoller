@@ -16,7 +16,7 @@ map:
   - addon_config:rw
 options:
   influxdb_url: http://47c55538-influxdbv2:9200
-  influxdb_token: 
+  influxdb_token: EnterToken
   influxdb_org: GlenCookTech
   influxdb_bucket: unifi 
   unifi_user: ha
